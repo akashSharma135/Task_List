@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    margin-top: 15px;
+}
+
+.card{
+    width: 70%;
+    padding: 10px;
+    box-shadow: 1px 2px 3px 3px #c2c0c0;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+#card-title{
+    font-size: 25px;
+    color: #8d8a8a;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.input-field > #input-task {
+    border: none;
+    padding-top: 20px;
+    width: 100%;
+    outline: none;
+}
+
+.input-field > #filter-task {
+    border: none;
+    padding-top: 20px;
+    width: 100%;
+    outline: none;
+}
+
+.input-field > label {
+    bottom: 0px;
+    left: 0%;
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.input-field > label::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    border-bottom: 3px solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+    color: #8d8a8a;
+}
+
+.input-field input:focus + #label .content-name{
+    transform: translateY(-100%);
+    font-size: 14px;
+    color: #5fa8d3;
+}
+
+.input-field input:focus #label::after, .input-field input:valid + #label::after {
+    transform: translateX(0%) ;
+}
+
+.add-task{
+    border: none;
+    background-color: #5fa8d3;
+    padding: 10px;
+    margin-top: 40px;
+    box-shadow: 1px 1px 2px 2px #cccaca;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.tasks {
+    margin-top: 60px;
+    font-size: 25px;
+    color: black;
+}
+
+.collection {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.clear-task {
+    background-color: black;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    width: 130px;
+}
+
+.clear-task > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+#icon {
+    float: right;
+    color: orangered;
+}
+
+.collection-item {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.collection-item:nth-child(odd) {
+    background-color: lightgray;
+}

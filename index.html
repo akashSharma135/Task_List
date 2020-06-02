@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div id="card-title">
+                Task List
+            </div>
+            <form id="task-form">
+                <div class="input-field">
+                    <input type="text" id="input-task" name="task" autocomplete="off">
+                    <label id="label" for="task">
+                        <span class="content-name">New Task</span>
+                    </label>
+                </div>
+                <input type="submit" value="Add Task" class="add-task">
+            </form>
+            <div class="tasks">Tasks</div>
+            <div class="input-field">
+                <input type="text" id="filter-task" name="task" autocomplete="off">
+                <label id="label" for="filter" id="filter">
+                    <span class="content-name">Filter Task</span>
+                </label>
+            </div>
+            <ul class="collection">
+                
+            </ul>
+            <button class="clear-task">
+                <a href="#">Clear-tasks</a>
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

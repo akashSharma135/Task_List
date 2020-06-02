@@ -27,6 +27,7 @@ function loadEventListeners() {
 
 }
 
+// Add Task
 function addTask(event) {
     if(taskInput.value === '') {
         alert('Add a Task..');
@@ -135,14 +136,15 @@ function removeTaskFromLocalStorage(taskItem) {
 
 function clearTasks() {
     //taskList.innerHTML = '';
+    if(confirm('Are you sure?') {
+        // Faster 
+        while(taskList.firstChild) {
+            taskList.removeChild(taskList.firstChild);
+        }
 
-    // Faster 
-    while(taskList.firstChild) {
-        taskList.removeChild(taskList.firstChild);
+        // Clear from Local storage
+        clearTasksFromLocalStorage();
     }
-
-    // Clear from Local storage
-    clearTasksFromLocalStorage();
 }
 
 // Clear Tasks from Local storage
